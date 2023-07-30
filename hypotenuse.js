@@ -1,9 +1,9 @@
 var btn = document.querySelector("#btn");
 var base = document.querySelector("#base");
-var height = documert.querySelector("#height");
+var height = document.querySelector("#height");
 
 function calculate(){
-    console.log(base+","+height);
+    console.log(base.value+","+height.value);
 
 }
 
