@@ -1,18 +1,21 @@
 
 var answer = ['90','right'];
 var btn = document.querySelector("#btn");
-var form = document.querySelector(".quizform");
+var qform = document.querySelector(".quizform");
 
 function display(){
    
    var score = 0;
    var index =0;
-    const data = new FormData(form);
-    console.log(data);
-    for (let item in data.entries ){
-        console.log(item);
+    const qdata = new FormData(qform);
+    console.log(qdata);
+    for (let value of qdata.values() ){
+        if (value ===answer[index]){
+            score++;
+        }
+        index++;
     }
-
+    console.log("your score "+ score);
 }
 
 btn.addEventListener("click",display);
