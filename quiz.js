@@ -2,7 +2,7 @@
 var answer = ['90','right'];
 var btn = document.querySelector("#btn");
 var qform = document.querySelector(".quizform");
-var message = document.querySelector(".message");
+var message = document.querySelector("#message");
 function display(){
    
    var score = 0;
@@ -15,7 +15,7 @@ function display(){
         index++;
     }
 
-    message.innerText="your score is : "+score;
+    message.innerText="Your Score is : "+score;
 }
 
 btn.addEventListener("click",display);

@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hypotenuse</title>
+    <title>fun with triangles | Hypotenuse</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <h1>fun with Triangles</h1>
-            <a href="index.html" class="link link-active">Triangles</a>
-            <a href="quiz.html" class="link">quiz</a>
+    
+    <div class="navbar">
+        <h1 class="title">fun with Triangles</h1>
+        <div class="nav-right">
+            <a href="index.html" class="link ">Triangles ?</a>
+            <a href="quiz.html" class="link">Quiz</a>
             <a href="hypotenuse.html" class="link link-active">Hypotenuse</a>
             <a href="area.html" class="link">Area</a>
         </div>
-        <div class="hypotenuse">
-            <h1>lets find the hypotenuse of a triangle</h1>
-            <label for="base">enter the Base (a)</label><br>
-            <input type="text" id="base"><br>
-            <label for="height">Enter the Height (b)</label><br>
-            <input type="text" id="height"><br>
-            <button id="btn">calculate</button>
-            <div class="formula">
-                <h2>Hypotenuse Formula</h2>
-                <h3>Sqrt((Base * Base) + (Height * Height))</h3>
+    </div>
+        <div class="container">
+            <h2 class="main-title">Find Hypotenuse of a Triangle</h2>
+
+            <div class="hero">
+                <label for="base">Enter Base (a)</label><br>
+                <input type="text" id="base"><br>
+                <label for="height">Enter Height (b)</label><br>
+                <input type="text" id="height"><br>
+                <button id="btn">Calculate</button>
+                <div class="formula">
+                    <h2>Hypotenuse Formula</h2>
+                    <h3>Sqrt((Base * Base) + (Height * Height))</h3>
+                </div>
+                <p id="message"></p>
             </div>
-            <h2 class="output"></h2>
+            
     
         </div>
         
-    </div>
+        <div class="footer">
+            Made by @<a class="link" href="https://github.com/MayankMukul">MayankMukul</a>
+            <ul>
+                <li class="list-inline"> <a class="link" href="https://www.linkedin.com/in/mayank-mukul-443483267/">Linkedin</a></li>
+                <li class="list-inline"><a class="link" href="https://github.com/MayankMukul">Github</a></li>
+                <li class="list-inline"><a class="link" href="https://replit.com/@MayankMukul">Replit</a></li>
+            </ul>
+        </div>
 
     <script src="hypotenuse.js"></script>
 </body>

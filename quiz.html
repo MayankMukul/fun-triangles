@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz</title>
+    <title>fun with triangles | Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <h1>fun with Triangles</h1>
-            <a href="index.html" class="link ">Triangles</a>
-            <a href="quiz.html" class="link link-active">quiz</a>
+    
+    <div class="navbar">
+        <h1 class="title">fun with Triangles</h1>
+        <div class="nav-right">
+            <a href="index.html" class="link ">Triangles ?</a>
+            <a href="quiz.html" class="link link-active">Quiz</a>
             <a href="hypotenuse.html" class="link">Hypotenuse</a>
             <a href="area.html" class="link">Area</a>
         </div>
-        <div class="form">
-            <form class="quizform" >
-                <div class="question-container">
-                    <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>        
-                    <label for="q1"><input type="radio" name="q1" class="option1" value="45">45</label>
-                    <label for="q1"><input type="radio" name="q1" class="option1" value="60">60</label>  
-                    <label for="q1"><input type="radio" name="q1" class="option1" value="90">90</label>
-                </div>
-                
-                 <div class="question-container">
-                    <p>If a triangle has an angle of 90 degrees, what is it called?</p>    
-                    <label for="q2"><input type="radio" name="q2" class="option2" value="obtuse">obtuse</label>
-                    <label for="q2"><input type="radio" name="q2" class="option2" value="acute">acute</label>            
-                    <label for="q2"><input type="radio" name="q2" class="option2" value="right">right</label>
-                 </div>               
-            </form>
-            <button id="btn">submit</button>
-            <p class="message"></p>
+    </div>
+        <div class="container">
+            <h2 class="main-title">Triangle quiz</h2>
+
+            <div class="hero">
+                <form class="quizform" >
+                    <div class="question-container">
+                        <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>        
+                        <label for="q1"><input type="radio" name="q1" class="option1" value="45">45</label>
+                        <label for="q1"><input type="radio" name="q1" class="option1" value="60">60</label>  
+                        <label for="q1"><input type="radio" name="q1" class="option1" value="90">90</label>
+                    </div>
+                    
+                     <div class="question-container">
+                        <p>If a triangle has an angle of 90 degrees, what is it called?</p>    
+                        <label for="q2"><input type="radio" name="q2" class="option2" value="obtuse">Obtuse Angle</label>
+                        <label for="q2"><input type="radio" name="q2" class="option2" value="acute">Acute Angle</label>            
+                        <label for="q2"><input type="radio" name="q2" class="option2" value="right">Right Angle</label>
+                     </div>               
+                </form>
+                <button id="btn">Submit</button>
+                <p id="message"></p>
+            </div>
+           
         </div>
         
-    </div>
+        <div class="footer">
+            Made by @<a class="link" href="https://github.com/MayankMukul">MayankMukul</a>
+            <ul>
+                <li class="list-inline"> <a class="link" href="https://www.linkedin.com/in/mayank-mukul-443483267/">Linkedin</a></li>
+                <li class="list-inline"><a class="link" href="https://github.com/MayankMukul">Github</a></li>
+                <li class="list-inline"><a class="link" href="https://replit.com/@MayankMukul">Replit</a></li>
+            </ul>
+        </div>
     
 
     <script src="quiz.js"></script>

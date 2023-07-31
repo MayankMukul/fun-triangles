@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto&display=swap');
+
+:root {
+    --yellow : #ffff00;
+    --linkcolor : #020617;
+    --offwhite : #f3f4f6;
+    --red : #dc2626;
+    --white : #fafaf9;
+    --backYello : #fefce8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--offwhite);
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 2rem auto;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    border: solid 1px;
+    background-color: var(--backYello);
+    border-radius: 2rem;
+}
+
+.hero {
+    margin: auto;
+    padding: 2rem;
+    padding-top: 0;
+    text-align: center;
+    width: 50%;
+    
+}
+
+.navbar {
+    padding: 2rem;
+    background-color: var(--yellow);
+    display: block;
+    width: 97.%;
+    border-bottom-left-radius: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-title {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-top: 0;
+    padding: 1.5rem;
+    background-color: var(--linkcolor);
+    color: var(--white) ;
+    
+}
+
+
+.nav-right {
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--linkcolor);
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.link-active {
+    font-weight: bold;
+}
+
+label {
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1.3rem;
+}
+
+input {
+    margin: 1rem;
+    padding: .5rem;
+    font-size: 1rem;
+
+}
+
+button {
+    cursor: pointer;
+    padding: .5rem;
+    color: var(--yellow);
+    background-color: var(--linkcolor);
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+#message , .message {
+    color: var(--red) ;
+    
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--yellow);
+    padding: 1rem;
+    border-top-right-radius: 2rem;
+    font-weight: bold;
+    margin-top: auto;
+    
+}
+
+.footer .link {
+    color: var(--black);
+}
+
+.footer ul {
+   
+    padding-inline-start: 0px;
+    list-style-type: none;
+   
+}
+
+.list-inline {
+    display: inline;
+    padding: 0rem .5rem;
+}

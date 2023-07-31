@@ -5,9 +5,9 @@ var message = document.querySelector("#message");
 function istriangle() {
     var sum = sumoftriangle();
     if (sum === 180){
-        message.innerText = ("This is a triangle");
+        message.innerText = ("Yes! It is a Triangle");
     } else {
-        message.innerText = ("This is not a triangle");
+        message.innerText = ("Nope! It is not a Triangle");
     }
 }
 

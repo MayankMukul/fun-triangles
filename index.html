@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun with Triangles</title>
+    <title>fun with triangles | Angles</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    
         <div class="navbar">
-            <h1>fun with Triangles</h1>
-            <a href="index.html" class="link link-active">Triangles</a>
-            <a href="quiz.html" class="link">quiz</a>
-            <a href="hypotenuse.html" class="link">Hypotenuse</a>
-            <a href="area.html" class="link">Area</a>
+            <h1 class="title">fun with Triangles</h1>
+            <div class="nav-right">
+                <a href="index.html" class="link link-active">Triangles ?</a>
+                <a href="quiz.html" class="link">Quiz</a>
+                <a href="hypotenuse.html" class="link">Hypotenuse</a>
+                <a href="area.html" class="link">Area</a>
+            </div>
         </div>
 
-        <div class="angles">
-            <h3 class="title">Enter the angles of the triangle to check if it is a Triangle or not</h3>
-            <label for="angle1">Angle 1</label><br>
-            <input class="angle" id="angle1" type="number"><br>
-            <label for="angel2">Angle 2</label><br>
-            <input class="angle" id="angel2" type="number"><br>
-            <label for="angle3">Angle 3</label><br>
-            <input class="angle" id="angle3" type="number"><br>
-            <button class="btn">Is it a Triangle ?</button>
-            <p id="message"></p>
+        <div class="container">
+            <h2 class="main-title">Angles of the Triangles</h2>
+
+            <div class="hero">
+                <h3 class="title">Enter the angles of the triangle to check if it is a Triangle or not</h3>
+                <label for="angle1">Angle 1</label><br>
+                <input class="angle" id="angle1" type="number"><br>
+                <label for="angel2">Angle 2</label><br>
+                <input class="angle" id="angel2" type="number"><br>
+                <label for="angle3">Angle 3</label><br>
+                <input class="angle" id="angle3" type="number"><br>
+                <button class="btn">Is it a Triangle ?</button>
+                <p id="message"></p>
+            </div>
+            
         </div>
        
-
-    </div>
+        <div class="footer">
+            Made by @<a class="link" href="https://github.com/MayankMukul">MayankMukul</a>
+            <ul>
+                <li class="list-inline"> <a class="link" href="https://www.linkedin.com/in/mayank-mukul-443483267/">Linkedin</a></li>
+                <li class="list-inline"><a class="link" href="https://github.com/MayankMukul">Github</a></li>
+                <li class="list-inline"><a class="link" href="https://replit.com/@MayankMukul">Replit</a></li>
+            </ul>
+        </div>
 
     <script src="app.js"></script>
 </body>
