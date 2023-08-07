@@ -15,7 +15,7 @@ function display(){
         index++;
     }
 
-    message.innerText="Your Score is : "+score;
+    message.innerText="You scored "+score + " points.";
 }
 
 btn.addEventListener("click",display);
