@@ -4,8 +4,13 @@ var height = document.querySelector("#height");
 var message = document.querySelector("#message");
 
 function calculate(){
-    var h;
-    h = Math.sqrt((base.value * base.value) + (height.value * height.value));
-    message.innerText = "The length of Hypotenuse is " + h ;
+    if (base.value !=='' && height.value !==''){
+        var h;
+        h = Math.sqrt((base.value * base.value) + (height.value * height.value));
+        message.innerText = "The length of Hypotenuse is " + h ;
+    } else if (base.value == '' && height.value == ''){
+        message.innerText = `*Enter lenght of base and height first`;
+    }
+   
 }
 btn.addEventListener("click",calculate);

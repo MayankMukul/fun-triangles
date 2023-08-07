@@ -8,8 +8,9 @@ function display(){
    var score = 0;
    var index =0;
 
-   if (qform !== ''){
+   
     const qdata = new FormData(qform);
+    if (qdata.values() !== ''){
     for (let value of qdata.values() ){
         if (value ===answer[index]){
             score++;

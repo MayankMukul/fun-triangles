@@ -6,15 +6,33 @@ var output = document.querySelectorAll(".message");
 var lengths = document.querySelectorAll(".length");
 
 function area1() {
-    var area = 0.5 * (base1.value *height1.value) ;
-    output[0].innerText = "The area of the triangle whose base "+base1.value+" and height "+height1.value+" is "+area;
-}
+    if (base1.value !=='' && height1.value !== ''){
+        var area = 0.5 * (base1.value * height1.value) ;
+        output[0].innerText = "The area of triangle whose base "+base1.value+" and height "+height1.value+" is "+area;    
+    }else if (base1.value =='' && height1.value == ''){
+        output[0].innerText = "*First enter length of base and height!";
+    } else if (base1.value ==''){
+        output[0].innerText = "*First enter length of base!";
+    } else if (height1.value == '') {
+        output[0].innerText = "*First enter length of height!";
+    }
+   }
 
 function area2 ( ){
-    var s = (lengths[0].value + lengths[1].value + lengths[2].value)/2;
-    var area = Math.sqrt(s*(s-lengths[0].value)*(s-lengths[1].value)*(s-lengths[2].value));
-    output[1].innerText = `The area of the triangle with sides ${lengths[0].value}, ${lengths[1].value}, ${lengths[2].value} is ${area}`;
-
+    if (lengths[0].value !=='' && lengths[1].value !== '' && lengths[2].value !== ''){
+        var s = (lengths[0].value + lengths[1].value + lengths[2].value)/2;
+        var area = Math.sqrt(s*(s-lengths[0].value)*(s-lengths[1].value)*(s-lengths[2].value));
+        output[1].innerText = `The area of triangle with sides ${lengths[0].value}, ${lengths[1].value}, ${lengths[2].value} is ${area}`;
+    } else if (lengths[0].value =='' && lengths[1].value == '' && lengths[2].value == ''){
+        output[1].innerText =`*First enter all the sides!`;
+    }else if (lengths[0].value ==''){
+        output[1].innerText= `*Enter first side!`;
+    }else if (lengths[1].value ==''){
+        output[1].innerText=`*Enter second side!`;
+    }else if (lengths[2].value ==''){
+        output[1].innerText=`*Enter third side!`;
+    }
+    
 }
 
 btn1.addEventListener("click",area1);
