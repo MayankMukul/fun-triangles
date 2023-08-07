@@ -7,9 +7,9 @@ function istriangle() {
     if (angles[0].value !=='' && angles[1].value !=='' && angles[2].value !==''){
         var sum = sumoftriangle();
         if (sum === 180){
-            message.innerText = ("Yes! It is a Triangle");
+            message.innerHTML = `<span style="color:green">Yes! It is a Triangle. </span>`;
         } else {
-            message.innerText = ("Nope! It is not a Triangle");
+            message.innerHTML = `<span style="color:red">Nope! It is not a Triangle. </span>`;
         }
     }else {
         message.innerText="*Enter the angles first!";

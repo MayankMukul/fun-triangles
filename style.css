@@ -122,7 +122,8 @@ button {
     font-weight: bold;
 }
 
-p {
+.para {
+    margin: 1rem;
     font-size: 1.3rem;
 }
 
