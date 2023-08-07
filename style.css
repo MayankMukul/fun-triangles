@@ -34,7 +34,6 @@ body {
     padding: 2rem;
     padding-top: 0;
     text-align: center;
-    width: 50%;
     
 }
 
@@ -83,8 +82,11 @@ h1 {
 label {
     padding: .5rem;
     margin: .5rem;
-    font-size: 1.3rem;
-    
+    font-size: 1.3rem; 
+}
+
+.question-container > label, input {
+    cursor: pointer;
 }
 
 input {
@@ -172,7 +174,16 @@ p {
     .footer{
         width: 100%;
     }
-    
+    .quiz {
+        padding:  0 ;
+        
+    }
+    .quizform{
+        box-sizing: border-box;
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width:800px) {
