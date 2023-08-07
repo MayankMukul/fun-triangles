@@ -22,6 +22,7 @@ body {
     margin: 2rem auto;
     padding: 0;
     width: 50%;
+    /* min-width: 400px; */
     text-align: center;
     border: solid 1px;
     background-color: var(--backYello);
@@ -38,6 +39,7 @@ body {
 }
 
 .navbar {
+    box-sizing: border-box;
     padding: 2rem;
     background-color: var(--yellow);
     display: block;
@@ -82,10 +84,11 @@ label {
 }
 
 input {
-    margin: 1rem;
+    margin: 1rem auto;
+    
     padding: .5rem;
     font-size: 1rem;
-
+   
 }
 
 button {
@@ -108,9 +111,10 @@ p {
 }
 
 .footer {
+    box-sizing: border-box;
     text-align: center;
     background-color: var(--yellow);
-    padding: 1rem;
+    padding: 2rem;
     border-top-right-radius: 2rem;
     font-weight: bold;
     margin-top: auto;
@@ -131,4 +135,31 @@ p {
 .list-inline {
     display: inline;
     padding: 0rem .5rem;
+}
+
+@media only screen and (max-width:800px) and (min-width:480px) {
+    .container{
+        width: 70%;
+    }
+}
+
+@media only screen and ( max-width:480px){
+
+    .navbar{
+        width : 100%;
+    }
+    .container {
+        width: 100%;
+        
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    body {
+        padding: 0 2rem;
+    }
+    
 }
